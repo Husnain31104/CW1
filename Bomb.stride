@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Bomb" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Bomb wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="move(2)" expression-java="move(2)" enable="true"/>
+                <if condition="Greenfoot.getRandomNumber(100)&lt;10" condition-java="Greenfoot.getRandomNumber(100) &lt; 10" enable="true">
+                    <ifStatements>
+                        <call expression="turn(Greenfoot.getRandomNumber(15)-30)" expression-java="turn(Greenfoot.getRandomNumber(15) - 30)" enable="true"/>
+                        <call expression="move(Greenfoot.getRandomNumber(10)-5)" expression-java="move(Greenfoot.getRandomNumber(10) - 5)" enable="true"/>
+                    </ifStatements>
+                    <else/>
+                </if>
+                <call expression="eatBug()" expression-java="eatBug()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="eatBug" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(Bug.class)" condition-java="isTouching(Bug.class)" enable="true">
+                    <ifStatements>
+                        <call expression="removeTouching(Bug.class)" expression-java="removeTouching(Bug.class)" enable="true"/>
+                        <call expression="getWorld().showText(&quot;You Lose&quot;,300,200)" expression-java="getWorld().showText(&quot;You Lose&quot;, 300, 200)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>

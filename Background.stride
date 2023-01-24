@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Background" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class Background.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Bug" type-java="Bug" name="bug" value="new Bug()" value-java=" new Bug()" enable="true"/>
+                <call expression="addObject(bug,31,195)" expression-java="addObject(bug, 31, 195)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food,70,60)" expression-java="addObject(food, 70, 60)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food2" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food2,521,74)" expression-java="addObject(food2, 521, 74)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food3" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food3,544,322)" expression-java="addObject(food3, 544, 322)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food4" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food4,232,339)" expression-java="addObject(food4, 232, 339)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb,138,75)" expression-java="addObject(bomb, 138, 75)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb2" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb2,174,203)" expression-java="addObject(bomb2, 174, 203)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb3" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb3,476,232)" expression-java="addObject(bomb3, 476, 232)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb4" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb4,286,85)" expression-java="addObject(bomb4, 286, 85)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food5" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food5,295,185)" expression-java="addObject(food5, 295, 185)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food6" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food6,492,366)" expression-java="addObject(food6, 492, 366)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food7" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food7,233,30)" expression-java="addObject(food7, 233, 30)" enable="true"/>
+                <variable type="Food" type-java="Food" name="food8" value="new Food()" value-java=" new Food()" enable="true"/>
+                <call expression="addObject(food8,418,47)" expression-java="addObject(food8, 418, 47)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb5" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb5,334,369)" expression-java="addObject(bomb5, 334, 369)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb6" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb6,563,109)" expression-java="addObject(bomb6, 563, 109)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb7" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb7,411,142)" expression-java="addObject(bomb7, 411, 142)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb8" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb8,57,353)" expression-java="addObject(bomb8, 57, 353)" enable="true"/>
+                <variable type="Bomb" type-java="Bomb" name="bomb9" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
+                <call expression="addObject(bomb9,352,259)" expression-java="addObject(bomb9, 352, 259)" enable="true"/>
+                <variable type="Bonus" type-java="Bonus" name="bonus" value="new Bonus()" value-java=" new Bonus()" enable="true"/>
+                <call expression="addObject(bonus,551,207)" expression-java="addObject(bonus, 551, 207)" enable="true"/>
+                <variable type="Bonus" type-java="Bonus" name="bonus2" value="new Bonus()" value-java=" new Bonus()" enable="true"/>
+                <call expression="addObject(bonus2,26,20)" expression-java="addObject(bonus2, 26, 20)" enable="true"/>
+                <variable type="Bonus" type-java="Bonus" name="bonus3" value="new Bonus()" value-java=" new Bonus()" enable="true"/>
+                <call expression="addObject(bonus3,176,363)" expression-java="addObject(bonus3, 176, 363)" enable="true"/>
+                <variable type="Bonus" type-java="Bonus" name="bonus4" value="new Bonus()" value-java=" new Bonus()" enable="true"/>
+                <call expression="addObject(bonus4,338,132)" expression-java="addObject(bonus4, 338, 132)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

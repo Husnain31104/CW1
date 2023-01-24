@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Fire" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="Fire" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body/>
+        </method>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Fire wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <blank/>
+                <call expression="move(5)" expression-java="move(5)" enable="true"/>
+                <call expression="eatBomb()" expression-java="eatBomb()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="eatBomb" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(Bomb.class)" condition-java="isTouching(Bomb.class)" enable="true">
+                    <ifStatements>
+                        <call expression="removeTouching(Bomb.class)" expression-java="removeTouching(Bomb.class)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>
